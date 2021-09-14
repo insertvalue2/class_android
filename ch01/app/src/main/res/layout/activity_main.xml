@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><!-- LinearLayout 범위 설명 -->
+<!-- LinearLayout 컴포넌트는 자식을 가질수 있다. 들여쓰기로 구분 가능 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--뷰 컴포넌트가 시작을 할 때는 여는 꺽쇠 시작로 시작을 하고
+     바로 오른편에 뷰 컴포넌트에 종류가 온다.
+     / 전까지 텍스트 뷰에 속성입니다.
+     < 하나의 뷰 컴포넌트 이다. >
+     -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요"
+
+        android:textColor="@color/purple_200"
+        android:textSize="20dp"
+         />
+    <!--텍스트 뷰에 속성을 많이 알면 알수로 많은것들을 할 수 있다
+        속성을 알 수 있는 방법은 디자인탭으로 확인이 가능하다.
+        리포멧팅 안내 !
+        컨트롤 스페이스 자동완성키 안내
+    -->
+
+    <!-- 꺽쇠 사용 2전째 방법 위에 컴포넌트와 완전히 동일 하다 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="반갑습니다."
+        android:visibility="visible"></TextView>
+
+
+</LinearLayout>
