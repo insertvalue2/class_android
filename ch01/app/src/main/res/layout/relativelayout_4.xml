@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--아이디 하나로만 사용 부모 기준 사용  -->
+
+    <TextView
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/view5"
+        android:layout_toRightOf="@id/view5"
+        android:background="#009688" />
+
+    <TextView
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/view5"
+        android:layout_alignStart="@id/view5"
+        android:background="#FFEB3B" />
+
+    <TextView
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/view5"
+        android:layout_toLeftOf="@id/view5"
+        android:background="#CDDC39" />
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/view5"
+        android:layout_toLeftOf="@id/view5"
+        android:background="#4CAF50" />
+
+    <TextView
+        android:id="@+id/view5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="#F44336" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/view5"
+        android:background="#E91E63" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/view5"
+        android:layout_toRightOf="@id/view5"
+        android:background="#9C27B0" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/view5"
+        android:layout_alignStart="@id/view5"
+        android:background="#3F51B5" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/view5"
+        android:layout_toLeftOf="@id/view5"
+        android:background="#009688" />
+
+
+</RelativeLayout>

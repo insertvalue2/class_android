@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,8 +9,6 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tView1"
-        android:layout_alignParentTop="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/mHeight"
@@ -18,15 +16,11 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/eView1"
-        android:layout_below="@id/tView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp" />
 
     <TextView
-        android:id="@+id/tView2"
-        android:layout_below="@id/eView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -35,19 +29,16 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/eView2"
-        android:layout_below="@id/tView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:inputType="number" />
 
     <Button
-        android:layout_below="@id/eView2"
         android:backgroundTint="#FF9800"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="@string/btnOk" />
 
-</RelativeLayout>
+</LinearLayout>

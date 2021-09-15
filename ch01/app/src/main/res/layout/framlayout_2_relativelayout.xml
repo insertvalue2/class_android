@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- RelativeLayout 레이아웃도 뷰를 겹칠수 있다 -->
+    <!-- 상대적으로 위치를 계산하기 때문에 메모리에 낭비가 많다.  -->
+    <!-- 가능하면 frameLayout 사용하기를 권장.  -->
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="#F44336"
+        android:text="hello android" />
+
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#2196F3"
+        android:text="hello android" />
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FF5722"
+        android:text="hello android" />
+
+
+</RelativeLayout>
