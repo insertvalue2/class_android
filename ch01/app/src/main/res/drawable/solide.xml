@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!--solid 는 면을 그리는 것-->
+    <solid android:color="#6E99BC" />
+    <stroke
+        android:width="10dp"
+        android:color="@color/black" />
+
+
+</shape>

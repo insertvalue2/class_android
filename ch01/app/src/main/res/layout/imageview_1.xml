@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- scr 속성 설명 source 약자
+        @drawable 폴더 밑에 이미지를 저장한다.
+    -->
+    <!-- 저해상도, 고해상도 이미지 (pixel 대신 dp 단위를사용 )
+     모든 디바이스에서 똑 같은 이미지를 ㅁ
+
+       -->
+    <ImageView
+        android:src="@drawable/dog2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/dog"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
+    <!-- 이미지 뷰에 크기를 지정하게 되면 고해상도, 저해상도
+         핸드폰에 관계없이 모두 같은 크기로 이미지가 그려지게 된다.
+         문제점 : 저해상도 폰에 고해상도 이미지를 그려주는 것은
+         불필요한 작업이다. (고해상도로 이미지를 표현할수도 없고
+         최대한 그려준다고 해서 메모리의 낭비가 심하다
+
+         해결 방법 ->  이미지를 각각 준비하면 된다.
+         저,중,고,초고 해상도
+         문제점 -> 같은 이미지를 모두 준비 해야 하나 x
+         도와주는 도구 : 플러그인 사용
+         shift + shift
+         plugins 입력
+         사이트 : https://romannurik.github.io/AndroidAssetStudio/nine-patches.html#&sourceDensity=320&name=example
+         검색 : Android Drawable Importer
+         // https://github.com/Vincent-Loi/android-drawable-importer-intellij-plugin
+         freeicons.io
+
+        -->
+    <ImageView
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
+
+
+</LinearLayout>

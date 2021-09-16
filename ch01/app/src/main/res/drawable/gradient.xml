@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    신텍스 에러
+    옵션 - android 쓰여 있다.
+    android 옵션을 사용하려면 android 지정해 주어야 한다.
+
+-->
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+<!--</selector>-->
+
+<!--디자이너가 그라데이션 이미지를 받아서 사용할수도 있는데
+    기기마다 해상도가 달라서 공백 같은 부분이 생길 수 있는데
+    개발자가 직접 만들어 사용하는 것이 좋다.
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="90"
+        android:centerColor="#BF9D9D"
+        android:endColor="#DC4343"
+        android:startColor="#674646" />
+</shape>
