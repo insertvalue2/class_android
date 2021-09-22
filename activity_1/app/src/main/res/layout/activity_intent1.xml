@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DCB4B4"
+    tools:context=".Intent_1">
+
+
+    <Button
+        android:backgroundTint="@color/purple_200"
+        android:id="@+id/button1"
+        android:text="인텐트"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+</LinearLayout>
