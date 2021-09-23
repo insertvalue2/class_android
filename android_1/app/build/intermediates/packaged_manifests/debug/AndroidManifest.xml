@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myactivity_1"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="31" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.MyActivity_1" >
+        <activity
+            android:name="com.example.myactivity_1.Intent3"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.myactivity_1.Intent_2"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myactivity_1.Intent_1"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name="com.example.myactivity_1.Calculator"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myactivity_1.Listener"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myactivity_1.MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
