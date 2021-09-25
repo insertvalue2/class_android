@@ -1,0 +1,48 @@
+
+05.Task
+
+:: intent 가 전환 될때 햄버거 처럼 위로 쌓인다
+
+- Stack
+    - 아래에서 위로 쌓이는것
+    - Task 가 쌓인다 (액티비티와 같다)
+
+: 일반적인 기본 방식                                              (2가지 경우)     A
+A ----> B -----> C (뒤로가기) -----> B (A를 다시 키는 경우) ---->  A -------->     B
+        A        B                  A                            B
+                 A                                               A
+
+옵션 (켜지는 방법을 자체 속성을 설정할 수 있다.)
+-> launchMode
+
+켜지는 방법을 지시하는 경우
+-> IntentFlag
+
+LaunchMode                다중 허용
+ - Standard                 O
+ - singleTop               조건부 -> 열려고 하는 액티비티가 현재 액티비티 라면
+                                     OnNewIntent 를 호출한다
+-------------------------------------------
+ - singleTask               X
+ - singleInstance           X
+
+인텐트 플래그
+FLAG_ACTIVITY_NEW_TASK
+FLAG_ACTIVITY_SINGLE_TOP
+FLAG_ACTIVITY_CLEAR_TOP
+....
+
+액티비티라는 것은 결국 Stack 구조로 관리가 된다.
+LaunchMode 를 활용해서 설정할 수 있다.
+정확한 LaunchMode 와 인텐트 플래그 개념을 알지 못하면 굉장히
+어려울 수 있다.
+
+가장 좋은 방법은 기본 모드를 사용하는 것이 좋다
+사용자도 (UX 관점으로 자연습럽게 이해할 수 있다.)
+
+결론 : 액티비티라는 것은 결국 Stack 구조로 관리가 된다.
+     - Stack 은 알아서 관리 되기 때문에 커스텀해서 사용하지 않는게 좋다
+
+주소
+https://developer.android.com/guide/components/activities/tasks-and-back-stack?hl=ko
+
