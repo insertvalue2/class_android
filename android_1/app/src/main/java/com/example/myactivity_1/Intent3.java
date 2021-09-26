@@ -49,10 +49,7 @@ public class Intent3 extends AppCompatActivity {
                 String url = editText.getText().toString();
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
-
             }
         });
-
-
     }
 }
