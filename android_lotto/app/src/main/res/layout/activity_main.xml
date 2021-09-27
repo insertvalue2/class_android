@@ -62,70 +62,78 @@
         app:layout_constraintTop_toBottomOf="@id/addButton">
 
         <TextView
-            android:visibility="gone"
-            tools:visibility="visible"
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="1"
+            android:gravity="center"
+            tools:text="1"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:background="@drawable/round_background_1"
+            tools:visibility="visible" />
 
         <TextView
-            android:visibility="gone"
-            tools:visibility="visible"
+
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="1"
+            android:gravity="center"
+            tools:text="1"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:visibility="visible" />
 
         <TextView
-            android:visibility="gone"
-            tools:visibility="visible"
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="1"
+            android:gravity="center"
+            tools:text="1"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:visibility="visible" />
 
         <TextView
-            android:visibility="gone"
-            tools:visibility="visible"
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="1"
+            android:gravity="center"
+            tools:text="1"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:visibility="visible" />
 
         <TextView
-            android:visibility="gone"
-            tools:visibility="visible"
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="1"
+            android:gravity="center"
+            tools:text="1"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:visibility="visible" />
 
         <TextView
-            android:visibility="gone"
-            tools:visibility="visible"
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="1"
+            android:gravity="center"
+            tools:text="1"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:visibility="visible" />
 
     </LinearLayout>
 

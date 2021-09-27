@@ -1,8 +1,11 @@
 package com.example.mylottoapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -19,6 +22,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
@@ -39,6 +43,43 @@ public class MainActivity extends AppCompatActivity {
         addEventListener();
     }
 
+    private void getRandom1() {
+        Random random = new Random();
+        int number = random.nextInt(45) + 1;
+        int[] lottoNumbers = new int[6];
+        Log.d("TAG", "number : " + number);
+        for(int i = 0; i < lottoNumbers.length; i ++) {
+            int selectedNumber = random.nextInt(45) + 1;
+            lottoNumbers[i] = selectedNumber;
+            // 중복된 값이 있는지 확인
+            for (int j = 0; j < i; j++) {
+                if (lottoNumbers[i] == lottoNumbers[j]) {
+                    i = i - 1;
+                    break;
+                }
+            }
+        }
+        Arrays.sort(lottoNumbers);
+        for(int i = 0; i < lottoNumbers.length; i++) {
+            Log.d("TAG", "lottoNumber : " + lottoNumbers[i]);
+        }
+    }
+
+    private void getRandom2() {
+        Random random = new Random();
+        ArrayList<Integer> list = new ArrayList<>();
+        while (list.size() < 6) {
+            int number = random.nextInt(45) + 1;
+            if (list.contains(number)) {
+                continue;
+            }
+            list.add(number);
+        }
+        Collections.sort(list);
+        Log.d("TAG", "list : " + list.toString());
+    }
+
+
     private void initData() {
         addBtn = findViewById(R.id.addButton);
         initBtn = findViewById(R.id.initButton);
@@ -56,6 +97,18 @@ public class MainActivity extends AppCompatActivity {
         numberTextViewList.add(findViewById(R.id.textView6));
     }
 
+    private Drawable setTextViewBackground(int number) {
+
+        Drawable drawable;
+        // Drawable Resource 가져 오는 방법
+//        Drawable drawableId = ContextCompat.getDrawable(this, R.drawable.round_background_1);
+        if(number <= 20) {
+            drawable = ContextCompat.getDrawable(this, R.drawable.round_background_1);
+        } else {
+            drawable = ContextCompat.getDrawable(this, R.drawable.round_background_2);
+        }
+        return drawable;
+    }
 
     private void addEventListener() {
         runBtn.setOnClickListener(view -> {
@@ -71,6 +124,7 @@ public class MainActivity extends AppCompatActivity {
                 // setText -> int 셋팅시 오류 확인
                 numberTextViewList.get(i).setText(String.valueOf(list.get(i)));
                 numberTextViewList.get(i).setVisibility(View.VISIBLE);
+                numberTextViewList.get(i).setBackground(setTextViewBackground(list.get(i)));
             }
 
         });
