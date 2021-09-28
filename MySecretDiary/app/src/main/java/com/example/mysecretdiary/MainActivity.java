@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -63,9 +64,9 @@ public class MainActivity extends AppCompatActivity {
 //            passwordPreferences.getString("password", "000");
             if (passwordPreferences.getString("password", "000").equals(passwordFormUser)) {
                 // 패스워트 성공
-                //
                 // TODO 다이어리 페이지 작성 후에 넘겨 주어야 함.
-                // startActivity();
+                Intent intent = new Intent(this, DiaryActivity.class);
+                startActivity(intent);
             } else {
                 // 실패
                 showErrorAlertDialog();
@@ -93,9 +94,7 @@ public class MainActivity extends AppCompatActivity {
                     changePasswordMode = true;
                     Toast.makeText(this, "변경할 패스워드를 입력해주세요", Toast.LENGTH_SHORT).show();
                     changePasswordButton.setBackgroundColor(Color.RED);
-                    // 패스워트 성공
-                    // TODO 다이어리 페이지 작성 후에 넘겨 주어야 함.
-                    // startActivity();
+
                 } else {
                     showErrorAlertDialog();
                 }
