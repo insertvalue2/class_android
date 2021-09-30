@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textSize="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요" />
+
+    <!--리스트라고 가정 -->
+<!--    <LinearLayout-->
+<!--        android:background="@color/black"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"/>-->
+
+    <!--프래그먼트로 대체
+        name - 어떤 플래그먼트인지 지정
+        id - 반드시 식별자를 지정해주어야 한다.
+    -->
+<!--    <fragment-->
+<!--        android:id="@+id/fragmentOne"-->
+<!--        android:name="com.example.myfragmentex.FragmentOne"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="300dp"/>-->
+
+    <!--코드로 프래그먼트 추가하는 해보기-->
+    <Button
+        android:id="@+id/button1"
+        android:text="프래그먼트 생성"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:text="프래그먼트 삭제"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <!--부모가 될 프래그먼트 만들어 주기 (container 개념) -->
+    <LinearLayout
+        android:background="@color/teal_200"
+        android:id="@+id/fragContainer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical" />
+
+
+</LinearLayout>
