@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".FragmentOne">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/frButton1"
+        android:background="#EAC1B4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="콜백이벤트생성\n(생성자)" />
+
+</LinearLayout>
