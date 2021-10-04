@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.SurfaceControl;
 import android.widget.Button;
@@ -25,6 +26,20 @@ public class MainActivity2 extends AppCompatActivity {
             transaction.replace(R.id.fragContainer, fragment);
             transaction.commit();
         });
+
+        //
+        new Thread(new Runnable(){
+            @Override
+            public void run() {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        button.setBackgroundColor(Color.BLACK);
+                    }
+                });
+                button.setBackgroundColor(Color.BLACK);
+            }
+        }).start();
 
     }
 }
