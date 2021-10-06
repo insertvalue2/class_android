@@ -1,0 +1,20 @@
+
+RecyclerView
+
+-장점
+    - ListView 의 개선판
+        - ViewHolder 포함
+    - 유연한다
+        - LayoutManager
+            - Linear
+            - Grid
+            - StaggeredGrid
+
+LayoutManager 참고 이미지
+https://recipes4dev.tistory.com/154
+
+RecyclerView 로 동적 목록 만들기
+https://developer.android.com/guide/topics/ui/layout/recyclerview#java
+
+//RecyclerView에 줄 라인 추가하기
+https://devsoboro.tistory.com/84
