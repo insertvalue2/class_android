@@ -10,5 +10,5 @@ TabLayout
  - tab 을 담당하는 역할
 
 Adapter
- - TabLayout 과 pager 를 연결해주는 역할
+ - pager 를 위한것
 

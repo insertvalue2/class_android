@@ -33,10 +33,9 @@ public class MainActivity extends AppCompatActivity {
             // 기본 종료 처리
             super.onBackPressed();
         } else {
-            // 4,3,@,1,0
+            // 4,3,2,1
             mPager.setCurrentItem(mPager.getCurrentItem() - 1);
         }
-
     }
 
     private class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
