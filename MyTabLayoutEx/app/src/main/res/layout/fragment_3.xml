@@ -10,7 +10,7 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Fragment 2"
+        android:text="Fragment 3"
         android:textSize="40sp"/>
 
 </LinearLayout>
