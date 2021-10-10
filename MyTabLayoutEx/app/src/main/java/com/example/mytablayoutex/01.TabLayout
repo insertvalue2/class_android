@@ -1,0 +1,16 @@
+
+
+사용법
+
+TabLayout 외부 라이브러리를 dependency 에 추가해야 한다.
+// ~ API 28
+implementation 'com.android.support:design:27.1.0'
+// API 29 ~
+implementation 'com.google.android.material:material:1.1.0'
+API 28(Pie) 버전까지는 support 라이브러리의 design 을 추가하고,
+API 29(Q) 버전부터는 material 라이브러리를 추가한다. (androidx 로 바뀌면서 support 라이브러리 사용 X)
+
+
+
+
+
