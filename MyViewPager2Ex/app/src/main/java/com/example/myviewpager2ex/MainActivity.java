@@ -1,6 +1,8 @@
 package com.example.myviewpager2ex;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
@@ -19,6 +21,11 @@ import androidx.viewpager2.widget.ViewPager2;
  *  왜냐하면 중첩된 fragment 는 API 레벨 17까지
  *  네이티브 fragment 에서 지원하지 않았기 때문입니다.
  *
+ * ViewPager2는 ViewPager 라이브러리의 개선된 버전으로,
+ * 향상된 기능을 제공하며 ViewPager 사용 시 발생하는 일반적인 문제를 해결합니다.
+ * 세로 방향 지원
+ * 오른쪽에서 왼쪽 지원
+ *
  * */
 public class MainActivity extends FragmentActivity {
 
@@ -33,7 +40,28 @@ public class MainActivity extends FragmentActivity {
         // Instantiate a ViewPager2 and a PagerAdapter.
         viewPager2 = findViewById(R.id.pager);
         pagerAdapter = new ScreenSlidePagerAdapter(this);
+        //viewPager2.setOrientation(ViewPager2.ORIENTATION_VERTICAL);
         viewPager2.setAdapter(pagerAdapter);
+        viewPager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+//                Log.d("TAG", "position : " + position);
+//                if (viewPager2.getCurrentItem() == NUM_PAGES - 1) {
+//                    viewPager2.setCurrentItem(0, false);
+//                }
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+//                Log.d("TAG", "state : " + state);
+//                super.onPageScrollStateChanged(state);
+                Log.d("TAG", "state : " + state);
+                Log.d("TAG", "viewPager2.getCurrentItem() : " + viewPager2.getCurrentItem());
+                if (viewPager2.getCurrentItem() == NUM_PAGES - 1) {
+                    viewPager2.setCurrentItem(0, false);
+                }
+            }
+        });
     }
 
     @Override
@@ -44,7 +72,11 @@ public class MainActivity extends FragmentActivity {
             super.onBackPressed();
         } else {
             // Otherwise, select the previous step.
-            viewPager2.setCurrentItem(viewPager2.getCurrentItem() - 1);
+            if (viewPager2.getCurrentItem() == (NUM_PAGES - 1)) {
+                viewPager2.setCurrentItem(0);
+            } else {
+                viewPager2.setCurrentItem(viewPager2.getCurrentItem() - 1);
+            }
         }
     }
 
