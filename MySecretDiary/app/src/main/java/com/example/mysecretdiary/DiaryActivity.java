@@ -27,14 +27,11 @@ public class DiaryActivity extends AppCompatActivity {
         diaryEditText.setText(detailPreferences.getString("detail", ""));
 
         // thread 기능 구현
-        Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
-                SharedPreferences preferences =  getSharedPreferences("diary", Context.MODE_PRIVATE);
-                SharedPreferences.Editor editor = preferences.edit();
-                editor.putString("detail", diaryEditText.getText().toString());
-                editor.apply();
-            }
+        Runnable runnable = () -> {
+            SharedPreferences preferences =  getSharedPreferences("diary", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.putString("detail", diaryEditText.getText().toString());
+            editor.apply();
         };
 
         diaryEditText.addTextChangedListener(new TextWatcher() {

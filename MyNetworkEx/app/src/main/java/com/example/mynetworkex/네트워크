@@ -1,0 +1,101 @@
+
+비동기 -> Async
+동기 -> Sync
+
+
+동기 방식은
+    - 작업을 순선대로 진행한다.
+    - A -> B -> C -> D
+    - 위에서 부터 아래로 실행
+
+
+비동기 방식
+    - 쓰레드를 만들어서 작업을 따로 처리한다.
+                      결과를 받는다.
+------------------------------------------>
+                      |
+          ------------(메인쓰레드에게 알려 준다)
+              작업
+
+
+
+
+
+
+
+네트워크
+--> 통신
+
+DataBase <------> Server <------> Client(app, web, ....)
+ 글                                   A
+ 댓글                                 B
+
+
+
+Local DataBase 의 한계
+    - 동기화가 어렵다 (핸드폰, 테블릿 ) 데이터가 따로 따로 존재 한다.
+    - 상호작용이 불가능 하다(남에 데이터를 볼 수 없다)
+
+서버와 통신하는 방법
+ - 해당 URL 로 요청한다.
+ - 추가 정보를 보낼 수 있다 (ex. putExtra) 사용자가 누군지 알아야 한다. : 인증정보
+ - JSON 형식을 사용해서 data 를 보낸다.
+ - Javascript Object Notation --> Javascript 에서 객체를 만들 때 사용하는 표현식
+
+ JSON 형식
+ - [] -> List
+ - {} -> 객체
+
+JSON Response
+[
+     {
+         "userId": 1,   --> 문서에 쓰여 있다.
+         "id": 1,
+         "title": "delectus aut autem",
+         "completed": false
+     },
+     {
+         "userId": 1,
+         "id": 2,
+         "title": "quis ut nam facilis et officia qui",
+         "completed": false
+     },
+]
+
+Json Parsing
+자바가 이해할 수 있도록 변환하는 과정
+
+Serializable (직렬화)
+   자바 직렬화란 자바 시스템 내부에서 사용되는 객체 또는 데이터를
+   외부의 자바 시스템에서도 사용할 수 있도록 바이트(byte) 형태로
+   데이터 변환하는 기술과 바이트로 변환된 데이터를 다시 객체로
+   변환하는 기술(역직렬화)을 아울러서 이야기합니다.
+
+-> 객체를 바이트 스트림으로 바꾸는 것, 즉 객체에 저장된 데이터를
+   스트림에 쓰기 위해 연속적으로 serial 데이터로 변환 하는 것
+   직렬화의 주된 목적은 객체를 상태 그대로 저장하고
+   필요할 때 다시 생성하여 사용하는 것이다.
+
+id, name, age , intro
+
+class Todo {
+    int userId;
+    int id;
+    String title;
+    boolean completed;
+}
+
+Request Type                        Status Code
+- GET     : 정보요청                --> 200 ok
+- POST    : 정보 추가 요청          --> 201 Create
+- DELETE  : 정보 삭제 요청
+- PUT     : 정보 수정 요청
+
+Status code
+200 :  요청은 성공
+400 :  실패
+
+
+https://blog.naver.com/getinthere/222426449415
+
+
