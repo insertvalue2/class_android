@@ -122,13 +122,10 @@ public class MainActivity2 extends AppCompatActivity {
 
             }
         });
-
         createPost();
-
     }
 
     private void createPost() {
-
         Call<Post> call = service.createPost(30
                 , "formUrlEncoded 적용한 제목 필드 부분"
                 , "formUrlEncoded 적용한 내용 필드 부분");
@@ -140,20 +137,15 @@ public class MainActivity2 extends AppCompatActivity {
                     Log.d("TAG", "status code : " + response.code());
                     return;
                 }
-
                 Post postResponse = response.body();
-
                 String content = "";
                 content += "Code : " + response.code() + "\n";
                 content += "Id: " + postResponse.getId() + "\n";
                 content += "User Id: " + postResponse.getUserId() + "\n";
                 content += "Title: " + postResponse.getTitle() + "\n";
                 content += "Text: " + postResponse.getText() + "\n";
-
                 Log.d("TAG", "content : " + content);
-
             }
-
             @Override
             public void onFailure(Call<Post> call, Throwable t) {
 
