@@ -10,6 +10,10 @@ import android.util.Log;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -27,6 +31,42 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // json create object 1
+        JSONObject objectJson = new JSONObject();
+        try {
+            objectJson.put("이름", "호랑이");
+            objectJson.put("나이", "10");
+            objectJson.put("직업", "동물");
+        } catch (JSONException e1) {
+            e1.printStackTrace();
+        }
+
+        // json array 1
+        JSONArray jsonObjectArray = new JSONArray();
+        jsonObjectArray.put(objectJson);
+        jsonObjectArray.put(objectJson);
+        jsonObjectArray.put(objectJson);
+
+        // json parsing
+        JSONObject obj;
+
+        try {
+            obj = new JSONObject(objectJson.toString());
+
+            JSONArray array = obj.getJSONArray("arr");
+            JSONObject dataObj = array.getJSONObject(0);
+
+            String friendName = dataObj.getString("이름");
+            String friendAge = dataObj.getString("나이");
+            System.out.println("friendName:"+friendName);
+            System.out.println("friendAge:"+friendAge);
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+
 //
 //        FakeHttp fakeHttp = new FakeHttp();
 //        Thread thread = new Thread(fakeHttp);

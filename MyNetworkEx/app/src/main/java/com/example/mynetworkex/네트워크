@@ -89,7 +89,8 @@ Request Type                        Status Code
 - GET     : 정보요청                --> 200 ok
 - POST    : 정보 추가 요청          --> 201 Create
 - DELETE  : 정보 삭제 요청
-- PUT     : 정보 수정 요청
+- PUT     : 정보 수정 요청 (필드 일부만 전달할 경우 전달한 필드 외 모두  null, 초기값 처리 됨)
+- PATCH   : 정보 수정 요청 (자원의 부분 교체, 자원 교체시 일부 필드 필요)
 
 Status code
 200 :  요청은 성공
@@ -97,5 +98,11 @@ Status code
 
 
 https://blog.naver.com/getinthere/222426449415
+
+Library
+    - Volley
+    - Retrofit
+
+
 
 
