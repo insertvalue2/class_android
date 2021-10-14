@@ -1,0 +1,124 @@
+{
+  "status": "ok",
+  "status_message": "Query was successful",
+  "data": {
+    "movie_count": 35932,
+    "limit": 20,
+    "page_number": 1,
+    "movies": [
+      {
+        "id": 15553,
+        "url": "https://yts.mx/movies/doctor-who-the-day-of-the-doctor-2013",
+        "imdb_code": "tt2779318",
+        "title": "Doctor Who The Day of the Doctor",
+        "title_english": "Doctor Who The Day of the Doctor",
+        "title_long": "Doctor Who The Day of the Doctor (2013)",
+        "slug": "doctor-who-the-day-of-the-doctor-2013",
+        "year": 2013,
+        "rating": 9.4,
+        "runtime": 77,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Drama",
+          "Family",
+          "Mystery",
+          "Sci-Fi"
+        ],
+        "summary": "nQg",
+        "language": "en",
+        "mpa_rating": "",
+        "background_image": "https://yts.mx/assets/images/movies/doctor_who_the_day_of_the_doctor_2013/background.jpg",
+        "background_image_original": "https://yts.mx/assets/images/movies/doctor_who_the_day_of_the_doctor_2013/background.jpg",
+        "small_cover_image": "https://yts.mx/assets/images/movies/doctor_who_the_day_of_the_doctor_2013/small-cover.jpg",
+        "medium_cover_image": "https://yts.mx/assets/images/movies/doctor_who_the_day_of_the_doctor_2013/medium-cover.jpg",
+        "large_cover_image": "https://yts.mx/assets/images/movies/doctor_who_the_day_of_the_doctor_2013/large-cover.jpg",
+        "state": "ok",
+        "torrents": [
+          {
+            "url": "https://yts.mx/torrent/download/522D19B70EB06419D339E4B1470640090CA69286",
+            "hash": "522D19B70EB06419D339E4B1470640090CA69286",
+            "quality": "720p",
+            "type": "bluray",
+            "seeds": 56,
+            "peers": 2,
+            "size": "734.9 MB",
+            "size_bytes": 770598502,
+            "date_uploaded": "2020-02-24 05:16:24",
+            "date_uploaded_unix": 1582517784
+          },
+          {
+            "url": "https://yts.mx/torrent/download/682E309437DFAE8BA08F44AD00D236B94FC0CD30",
+            "hash": "682E309437DFAE8BA08F44AD00D236B94FC0CD30",
+            "quality": "1080p",
+            "type": "bluray",
+            "seeds": 61,
+            "peers": 4,
+            "size": "1.42 GB",
+            "size_bytes": 1524713390,
+            "date_uploaded": "2020-02-24 07:15:16",
+            "date_uploaded_unix": 1582524916
+          }
+        ],
+        "date_uploaded": "2020-02-24 05:16:24",
+        "date_uploaded_unix": 1582517784
+      },
+      {
+        "id": 23907,
+        "url": "https://yts.mx/movies/oceans-apart-greed-betrayal-and-pacific-island-rugby-2020",
+        "imdb_code": "tt13411840",
+        "title": "Oceans Apart: Greed, Betrayal and Pacific Island Rugby",
+        "title_english": "Oceans Apart: Greed, Betrayal and Pacific Island Rugby",
+        "title_long": "Oceans Apart: Greed, Betrayal and Pacific Island Rugby (2020)",
+        "slug": "oceans-apart-greed-betrayal-and-pacific-island-rugby-2020",
+        "year": 2020,
+        "rating": 8.9,
+        "runtime": 0,
+        "genres": [
+          "Action",
+          "Documentary"
+        ],
+        "summary": "Presented by former Samoa rugby player Dan Leo, who sacrificed his own career to confront corruption in his national union, Oceans Apart looks at the bond between the Pacific and modern Rugby and reveals the darker side of the sport.",
+        "description_full": "Presented by former Samoa rugby player Dan Leo, who sacrificed his own career to confront corruption in his national union, Oceans Apart looks at the bond between the Pacific and modern Rugby and reveals the darker side of the sport.",
+        "synopsis": "Presented by former Samoa rugby player Dan Leo, who sacrificed his own career to confront corruption in his national union, Oceans Apart looks at the bond between the Pacific and modern Rugby and reveals the darker side of the sport.",
+        "yt_trailer_code": "w3vyw-gtEAQ",
+        "language": "en",
+        "mpa_rating": "",
+        "background_image": "https://yts.mx/assets/images/movies/oceans_apart_greed_betrayal_and_pacific_island_rugby_2020/background.jpg",
+        "background_image_original": "https://yts.mx/assets/images/movies/oceans_apart_greed_betrayal_and_pacific_island_rugby_2020/background.jpg",
+        "small_cover_image": "https://yts.mx/assets/images/movies/oceans_apart_greed_betrayal_and_pacific_island_rugby_2020/small-cover.jpg",
+        "medium_cover_image": "https://yts.mx/assets/images/movies/oceans_apart_greed_betrayal_and_pacific_island_rugby_2020/medium-cover.jpg",
+        "large_cover_image": "https://yts.mx/assets/images/movies/oceans_apart_greed_betrayal_and_pacific_island_rugby_2020/large-cover.jpg",
+        "state": "ok",
+        "torrents": [
+          {
+            "url": "https://yts.mx/torrent/download/C1ECF38744E6DD2E960AFA8CA452DFDC53FC63DE",
+            "hash": "C1ECF38744E6DD2E960AFA8CA452DFDC53FC63DE",
+            "quality": "720p",
+            "type": "web",
+            "seeds": 3,
+            "peers": 1,
+            "size": "554.84 MB",
+            "size_bytes": 581791908,
+            "date_uploaded": "2020-11-20 03:19:08",
+            "date_uploaded_unix": 1605838748
+          },
+          {
+            "url": "https://yts.mx/torrent/download/0191A2353802CB0F8B4AA92A3DACD830B3E40375",
+            "hash": "0191A2353802CB0F8B4AA92A3DACD830B3E40375",
+            "quality": "1080p",
+            "type": "web",
+            "seeds": 12,
+            "peers": 0,
+            "size": "1.01 GB",
+            "size_bytes": 1084479242,
+            "date_uploaded": "2020-11-20 04:38:19",
+            "date_uploaded_unix": 1605843499
+          }
+        ],
+        "date_uploaded": "2020-11-20 03:19:08",
+        "date_uploaded_unix": 1605838748
+      }
+    ]
+  }
+}
