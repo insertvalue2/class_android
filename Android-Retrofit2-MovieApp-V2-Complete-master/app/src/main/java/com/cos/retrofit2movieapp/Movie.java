@@ -151,7 +151,7 @@ public class Movie {
     }
 
     public float getRating() {
-        return rating;
+        return rating ;
     }
 
     public void setRating(Float rating) {
