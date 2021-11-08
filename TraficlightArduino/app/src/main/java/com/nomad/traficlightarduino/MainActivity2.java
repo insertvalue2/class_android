@@ -21,7 +21,6 @@ public class MainActivity2 extends AppCompatActivity {
     private Map<String, String> bluetoothMap;
     private final static int REQUEST_ENABLE_BT = 10011; // 블루투스 권한 요청 코드
 
-
     Button btnOn;
     Button btnOff;
 
