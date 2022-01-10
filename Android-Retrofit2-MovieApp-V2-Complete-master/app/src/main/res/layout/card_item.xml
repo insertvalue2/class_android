@@ -67,15 +67,15 @@
         <com.makeramen.roundedimageview.RoundedImageView
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/iv_poster"
-            android:src="@drawable/main"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="10dp"
             android:layout_width="110dp"
             android:layout_height="120dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
             android:scaleType="fitXY"
-            app:riv_corner_radius="20dip"
-            app:riv_border_width="2dip"
+            android:src="@drawable/round_image"
             app:riv_border_color="#FFFFFF"
+            app:riv_border_width="2dip"
+            app:riv_corner_radius="20dip"
             app:riv_mutate_background="true"
             app:riv_tile_mode="clamp" />
 

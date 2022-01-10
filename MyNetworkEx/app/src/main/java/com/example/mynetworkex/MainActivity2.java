@@ -79,6 +79,7 @@ public class MainActivity2 extends AppCompatActivity {
             e.printStackTrace();
         }
 
+
 //        Retrofit retrofit = new Retrofit.Builder()
         retrofit = new Retrofit.Builder()
                 .baseUrl("https://jsonplaceholder.typicode.com/")
@@ -122,6 +123,7 @@ public class MainActivity2 extends AppCompatActivity {
 
             }
         });
+
         createPost();
     }
 
